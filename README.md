@@ -144,3 +144,15 @@ It is acceptable to use the following section divider when it aids clarity. For 
 ```python
 # -----------------------------------------------------------------------------
 ```
+
+## Unit tests
+
+Modules and functions should be unit tested inside a separate module using the following name / path convention:
+
+```bash
+my_module.py
+tests/test_my_module.py
+```
+
+The unit tests themselves should be written using pytest by convention.
+
