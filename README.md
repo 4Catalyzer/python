@@ -137,6 +137,34 @@ Prefer immutable data types over their mutable equivalents. Specifically, prefer
 - For testing, use [pytest](https://pytest.org/).
   - Prefer [fixtures](https://docs.pytest.org/en/latest/fixture.html) over explicit setup and teardown.
 
+## Test layout
+
+Unit tests for a module should be placed under a `test/` subdirectory of the package containing the module, and should be named as the module file, prepended with `test_`.
+
+```
+my_package/my_module.py
+my_package/test/test_my_module.py
+```
+
+Functional tests should be placed under a top-level `tests/` directory. Their file names should start with `test_`.
+
+```
+my_package/my_module.py
+tests/test_functionality.py
+```
+
+## String quotes
+
+Use double quotes for human-readable strings and single quotes for strings used as keys or tokens.
+
+```python
+logger.info("this is a human-readable message")
+raise RuntimeError("something has gone wrong")
+
+my_dict['my_key'] = my_value
+raise ApiError(400, {'code': 'invalid_value'})
+```
+
 ## Section dividers
 
 It is acceptable to use the following section divider when it aids clarity. For example, this section divider can be useful after imports or between groups of related functions.
@@ -144,15 +172,3 @@ It is acceptable to use the following section divider when it aids clarity. For 
 ```python
 # -----------------------------------------------------------------------------
 ```
-
-## Unit tests
-
-Modules and functions should be unit tested inside a separate module using the following name / path convention:
-
-```bash
-my_module.py
-tests/test_my_module.py
-```
-
-The unit tests themselves should be written using pytest by convention.
-
