@@ -11,19 +11,7 @@ This guide is intended to present general guidelines. Most modules should follow
 
 Whenever possible, projects should use the newest release of Python 3.
 
-### Features
-
-Whenever possible, projects should take advantage of Python 3 features and syntax. For example prefer [new style super calls](https://docs.python.org/3.5/library/functions.html#super) to old stlye.
-
-Prefer this:
-```python
-super().method()
-```
-
-to this:
-```python
-super(klass, self).method()
-```
+Whenever possible, projects should take advantage of Python 3 features and syntax. [Follow our document on features to use in Python 3](Python3.md).
 
 ## Multi-line constructs
 
