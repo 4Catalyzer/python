@@ -172,3 +172,7 @@ It is acceptable to use the following section divider when it aids clarity. For 
 ```python
 # -----------------------------------------------------------------------------
 ```
+
+## Literals
+
+Prefer `tuple` literals to `list` literals.
