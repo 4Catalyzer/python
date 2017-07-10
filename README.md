@@ -172,3 +172,7 @@ It is acceptable to use the following section divider when it aids clarity. For 
 ```python
 # -----------------------------------------------------------------------------
 ```
+
+## Variable names
+
+Do not use one letter variable names, except for `i` or `j` in loops. Using `k` or `v` instead of `key` or `value`, for example in a `dict` comprehension is never appropriate.
