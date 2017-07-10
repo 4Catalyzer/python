@@ -11,6 +11,20 @@ This guide is intended to present general guidelines. Most modules should follow
 
 Whenever possible, projects should use the newest release of Python 3.
 
+### Features
+
+Whenever possible, projects should take advantake of Python 3 features and syntax. For example prefer [new style super calls](https://docs.python.org/3.5/library/functions.html#super) to old stlye.
+
+Prefer this:
+```python
+super().method()
+```
+
+to this:
+```python
+super(klass, self).method()
+```
+
 ## Multi-line constructs
 
 Indent continuation lines by the standard 4 spaces. Always use trailing commas whenever legal (note that this differs between Python 2 and Python 3). Match the indentation of the closing bracket with the indentation of the start of the multi-line construct.
