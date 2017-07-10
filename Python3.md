@@ -7,7 +7,7 @@ Prefer [new style super calls](https://docs.python.org/3/library/functions.html#
 
 Prefer this:
 ```python
-MyClass().method()
+super().method()
 ```
 
 to this:
