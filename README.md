@@ -9,7 +9,7 @@ This guide is intended to present general guidelines. Most modules should follow
 
 ## Python 3
 
-Whenever possible, projects should use the newest release of Python 3. [Follow our document on features to use in Python 3](Python3.md).
+Whenever possible, projects should use the newest release of Python 3 available in the deployment environment. Prefer Python 3 syntax to Python 2 syntax, especially when cleaner. See the [Python 3 guide](Python3.md) for more information.
 
 ## Multi-line constructs
 
