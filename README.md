@@ -172,3 +172,15 @@ It is acceptable to use the following section divider when it aids clarity. For 
 ```python
 # -----------------------------------------------------------------------------
 ```
+
+## Import styles
+
+If the module exports a "homogeneous bag" of some type (e.g. `model`, `views` or `layers`), consider impoting the module rather than the items in that module:
+```python
+# Good:
+from bfly import views
+
+# Bad:
+from bfly.views import \
+    bar, baz, qux
+```
