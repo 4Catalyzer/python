@@ -132,7 +132,7 @@ Prefer immutable data types over their mutable equivalents. Specifically, prefer
 
 ## Import styles
 
-If the module exports a homogeneous collection of some type (e.g. `models`, `views` or `layers`), prefer importing the module over the individual items in that module.
+If a module defines a homogeneous collection of items (e.g. `models`, `views` or `layers`), prefer importing the module over the individual items from that module.
 
 ```python
 # Good:
