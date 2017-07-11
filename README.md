@@ -132,13 +132,14 @@ Prefer immutable data types over their mutable equivalents. Specifically, prefer
 
 ## Import styles
 
-If the module exports a homogeneous collection of some type (e.g. `models`, `views` or `layers`), consider importing the module rather than the items in that module:
+If the module exports a homogeneous collection of some type (e.g. `models`, `views` or `layers`), prefer importing the module over the individual items in that module.
+
 ```python
 # Good:
-from my_app import views
+from . import views
 
 # Bad:
-from my_app.views import FooView, BarView
+from .views import FooView, BarView
 ```
 
 ## Preferred tools
