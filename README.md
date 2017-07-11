@@ -130,6 +130,17 @@ from foo import \
 
 Prefer immutable data types over their mutable equivalents. Specifically, prefer `tuple` and `frozenset` over `list` and `set` respectively when the relevant collections will not be mutated. However, it is acceptable to use `list` over `tuple` for collections that semantically constitute homogeneous lists rather than heterogeneous tuples, though `tuple` may still be better when the list is short.
 
+## Import styles
+
+If the module exports a homogeneous collection of some type (e.g. `models`, `views` or `layers`), consider importing the module rather than the items in that module:
+```python
+# Good:
+from my_app import views
+
+# Bad:
+from my_app.views import FooView, BarView
+```
+
 ## Preferred tools
 
 - For data frame manipulation, use [pandas](https://pandas.pydata.org/).
@@ -171,16 +182,4 @@ It is acceptable to use the following section divider when it aids clarity. For 
 
 ```python
 # -----------------------------------------------------------------------------
-```
-
-## Import styles
-
-If the module exports a "homogeneous bag" of some type (e.g. `model`, `views` or `layers`), consider impoting the module rather than the items in that module:
-```python
-# Good:
-from bfly import views
-
-# Bad:
-from bfly.views import \
-    bar, baz, qux
 ```
