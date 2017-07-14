@@ -1,16 +1,60 @@
 # Python 3 Guide
-_Python 3 for Python 2 devs._
+_Python 3 features for Python 2 developers._
 
-## Super calls
+## Class definitions
 
-Prefer [new style super calls](https://docs.python.org/3/library/functions.html#super) to old style.
+Python 3 no longer has old-style classes. Class definitions no longer need to explicitly extend `object`.
 
-Prefer this:
 ```python
-super().method()
+class MyClass:
+    pass
+
+
+# Equivalent to:
+class MyClass(object):
+    pass
 ```
 
-to this:
+## `super`
+
+Python 3 permits [`super`](https://docs.python.org/3/library/functions.html#super) to omit its arguments.
+
 ```python
-super(MyClass, self).method()
+class MyChildClass(MyParentClass):
+    def method(self, arg):
+        super().method(arg)
+
+        # Equivalent to:
+        super(MyChildClass, self).method(arg)
+```
+
+## Iterable unpacking
+
+Python 3 supports using `*` to unpack iterables.
+
+```python
+head, *rest = seq
+seq = (a, *b, c)
+
+# Equivalent to:
+head, rest = seq[0], seq[1:]
+seq = (a,) + tuple(b) + (c,)
+```
+
+Python 3 also supports using `**` to unpack dictionaries.
+
+```python
+my_dict = {
+    **dict_1,
+    'foo': 1,
+    'bar': 2,
+    **dict_2,
+}
+
+# Equivalent to:
+my_dict = {}
+my_dict.update(dict_1)
+my_dict['foo'] = 1
+my_dict['bar'] = 2
+my_dict.update(dict_2)
 ```
