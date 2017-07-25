@@ -19,5 +19,10 @@ setup(
         'Topic :: Software Development :: Libraries :: Python Modules',
     ),
     keywords='flake8',
-    install_requires=('flake8', 'flake8-import-order', 'flake8-bugbear'),
+    install_requires=(
+        'flake8',
+        'flake8-bugbear',
+        'flake8-commas',
+        'flake8-import-order',
+    ),
 )
