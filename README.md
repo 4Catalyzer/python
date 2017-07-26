@@ -5,7 +5,7 @@ Use [PEP 8](https://www.python.org/dev/peps/pep-0008/), with the following addit
 
 ## Exceptions
 
-This guide is intended to present general guidelines. Most modules should follow this style guide. However, specific modules should freely disregard specific guidelines whenever necessary.
+This guide is intended to present general guidelines. Most modules should follow this style guide. However, specific modules should freely disregard specific guidelines and use corresponding Flake8 pragmas whenever necessary. Disable the relevant rule or rules with `# noqa: <error>`.
 
 ## Python 3
 
