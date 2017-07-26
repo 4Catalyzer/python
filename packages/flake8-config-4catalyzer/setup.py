@@ -10,19 +10,24 @@ setup(
     license='MIT',
     classifiers=(
         'Development Status :: 3 - Alpha',
-        'Environment :: Web Environment',
+        'Environment :: Console',
+        'Framework :: Flake8',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
+        'Programming Language :: Python :: 2',
         'Programming Language :: Python :: 3',
         'Topic :: Software Development :: Libraries :: Python Modules',
+        'Topic :: Software Development :: Quality Assurance',
     ),
     keywords='flake8',
     install_requires=(
         'flake8',
-        'flake8-bugbear',
         'flake8-commas',
         'flake8-import-order',
     ),
+    extras_require={
+        ':python_version>="3.5"': ('flake8-bugbear',),
+    },
 )
