@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name='flake8-config-4catalyzer',
-    version='0.2.0',
+    version='0.2.1',
     url='https://github.com/4Catalyzer/python/tree/packages/flake8-config-4catalyzer',
     author="Alex Rothberg",
     author_email='arothberg@4catalyzer.com',
