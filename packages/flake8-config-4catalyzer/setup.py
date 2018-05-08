@@ -25,6 +25,7 @@ setup(
     install_requires=(
         'flake8',
         'flake8-commas',
+        'flake8-debugger',
         'flake8-import-order',
     ),
     extras_require={
