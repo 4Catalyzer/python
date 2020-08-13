@@ -37,7 +37,7 @@ tests/test_functionality.py
 
 It is acceptable to use the following section divider when it aids clarity. For example, this section divider can be useful after imports or between groups of related functions.
 
-```
+```python
 # -----------------------------------------------------------------------------
 ```
 
