@@ -8,7 +8,6 @@ Prefer immutable data types over their mutable equivalents. Specifically, prefer
 
 ## Preferred tools
 
-- For linting and formatting, use [fourmat](https://github.com/4Catalyzer/fourmat).
 - For data frame manipulation, use [pandas](https://pandas.pydata.org/).
 - For building command line interfaces, prefer [Click](http://click.pocoo.org/).
 - For testing, use [pytest](https://pytest.org/).
