@@ -1,6 +1,6 @@
 # Python
 
-We rely on [fourmat](https://github.com/4Catalyzer/fourmat) to automatically format and lint code according to our style guidelines. Below are additional guidelines that are not taken care of by `fourmat`.
+We rely on [Fourmat](https://github.com/4Catalyzer/fourmat) to automatically format and lint code according to our style guidelines. Below are additional guidelines that are not taken care of by Fourmat.
 
 ## Data types
 
